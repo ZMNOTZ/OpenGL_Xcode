@@ -1,7 +1,6 @@
 //
 //  main.cpp
 //  BaseOpenGL
-//
 //  Copyright © 2018年 emery. All rights reserved.
 //
 
