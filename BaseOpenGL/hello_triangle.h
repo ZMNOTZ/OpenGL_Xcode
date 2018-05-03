@@ -5,7 +5,6 @@
 #ifndef TESTGL_HELLO_TRIGANGLE_H
 #define TESTGL_HELLO_TRIGANGLE_H
 #include <iostream>
-
 // GLEW
 #define GLEW_STATIC
 #include <GL/glew.h>

@@ -27,8 +27,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C30DC79209B2F3E00539B58 /* SOIL2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SOIL2; sourceTree = "<group>"; };
+		9C30DC7A209B2FE100539B58 /* texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
 		9C4926482097FDE40071A076 /* hello_triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello_triangle.h; sourceTree = "<group>"; };
 		9C4926492098135B0071A076 /* glad.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		9C492667209B2E070071A076 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
 		9CA09C322096B56F0070600D /* BaseOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BaseOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA09C352096B56F0070600D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9CA09C3D2096B59F0070600D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -70,9 +73,12 @@
 		9CA09C342096B56F0070600D /* BaseOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				9C30DC79209B2F3E00539B58 /* SOIL2 */,
+				9C492667209B2E070071A076 /* res */,
 				9CA09C352096B56F0070600D /* main.cpp */,
 				9C4926482097FDE40071A076 /* hello_triangle.h */,
 				9C4926492098135B0071A076 /* glad.c */,
+				9C30DC7A209B2FE100539B58 /* texture.h */,
 			);
 			path = BaseOpenGL;
 			sourceTree = "<group>";
