@@ -32,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		5C25B0284594925C2891C7B9 /* stbi_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_ext.h; sourceTree = "<group>"; };
+		5C25B07BFA96C6A73E3C326F /* fragmentShader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragmentShader.frag; sourceTree = "<group>"; };
+		5C25B09586E1AF96F4D75C33 /* texture_source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture_source.h; sourceTree = "<group>"; };
 		5C25B103F8AE60BA73D3A1F7 /* pkm_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkm_helper.h; sourceTree = "<group>"; };
 		5C25B125CBBF220EFF9A90AD /* SOIL2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL2.c; sourceTree = "<group>"; };
 		5C25B2270BD2AE061D158F8F /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
@@ -42,17 +44,21 @@
 		5C25B57B775B0DA6CB3474D7 /* stbi_pvr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pvr.h; sourceTree = "<group>"; };
 		5C25B5C335858FC94E8A3F97 /* SOIL2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL2.h; sourceTree = "<group>"; };
 		5C25B6F3AED90677ADE9551C /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
+		5C25B71657FE0ED6729A2768 /* fragmentShaderX.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragmentShaderX.frag; sourceTree = "<group>"; };
 		5C25B8092BD509E2CF23FF29 /* stbi_DDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS.h; sourceTree = "<group>"; };
 		5C25B9D966661ED109DAD40B /* stbi_pkm_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pkm_c.h; sourceTree = "<group>"; };
 		5C25BA258553F08826431EE5 /* stbi_pvr_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pvr_c.h; sourceTree = "<group>"; };
+		5C25BA55678D6A2E59E6746B /* vertexShaderX.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertexShaderX.vs; sourceTree = "<group>"; };
 		5C25BABD425E18499BFFFA51 /* pvr_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pvr_helper.h; sourceTree = "<group>"; };
 		5C25BAD6F204248A4BBF8518 /* stbi_ext_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_ext_c.h; sourceTree = "<group>"; };
 		5C25BAF6BBC34D01B2E6CBE3 /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
+		5C25BB0175016248CC73D590 /* vertexShader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertexShader.vs; sourceTree = "<group>"; };
+		5C25BB5A1F82339DCD80A256 /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
 		5C25BBAD5A1048B680EDF3B2 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		5C25BD5CA633BC1E44FEEB46 /* stbi_pkm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pkm.h; sourceTree = "<group>"; };
 		5C25BDFF62A9EF65B2F9F6CF /* etc1_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = etc1_utils.h; sourceTree = "<group>"; };
 		5C25BEDB73DA10AD71D4298A /* etc1_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = etc1_utils.c; sourceTree = "<group>"; };
-		9C30DC7A209B2FE100539B58 /* texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
+		5C25BF1AA0AF2CE38B8220CD /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
 		9C4926482097FDE40071A076 /* hello_triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello_triangle.h; sourceTree = "<group>"; };
 		9C4926492098135B0071A076 /* glad.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 		9C492667209B2E070071A076 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
@@ -77,6 +83,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C25BA1EDB4FFCEF596CC85C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				5C25BF1AA0AF2CE38B8220CD /* shader.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		5C25BB85D8946DDF2D7751B6 /* texture */ = {
+			isa = PBXGroup;
+			children = (
+				5C25BB5A1F82339DCD80A256 /* texture.h */,
+				5C25BB0175016248CC73D590 /* vertexShader.vs */,
+				5C25B07BFA96C6A73E3C326F /* fragmentShader.frag */,
+				5C25B09586E1AF96F4D75C33 /* texture_source.h */,
+				5C25B71657FE0ED6729A2768 /* fragmentShaderX.frag */,
+				5C25BA55678D6A2E59E6746B /* vertexShaderX.vs */,
+			);
+			path = texture;
+			sourceTree = "<group>";
+		};
 		5C25BD5B4CC878A665695FAD /* SOIL2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,8 +156,9 @@
 				9CA09C352096B56F0070600D /* main.cpp */,
 				9C4926482097FDE40071A076 /* hello_triangle.h */,
 				9C4926492098135B0071A076 /* glad.c */,
-				9C30DC7A209B2FE100539B58 /* texture.h */,
 				5C25BD5B4CC878A665695FAD /* SOIL2 */,
+				5C25BB85D8946DDF2D7751B6 /* texture */,
+				5C25BA1EDB4FFCEF596CC85C /* common */,
 			);
 			path = BaseOpenGL;
 			sourceTree = "<group>";
