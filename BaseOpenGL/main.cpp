@@ -5,19 +5,28 @@
 //
 
 #include <iostream>
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
-#include "hello_triangle.h"
-#include "res/shaders/shader.h"
-#include "res/shaders/shader_sample.h"
-#include "texture/texture_source.h"
+
+#include "texture_source_alpha.h"
+#include "gl_matrix_transform.h"
+#include "gl_transform_source.h"
 int main(int argc, const char * argv[]) {
     
    // hello_triangle_main();
     
    // shader_sample_main();
 
-    texture_source_main();
+  //  texture_source_main();
+
+   // texture_main();
+
+   //texture_source_change_main();
+
+  //texture_source_alpha_main();
+
+   //maxtrix_transform_test();
+  // gl_matrix_transform_main();
+   gl_trans_form_source_main();
+
     return 0;
     
 }

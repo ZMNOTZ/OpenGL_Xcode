@@ -9,22 +9,26 @@
 
 // Other Libs
 #include <SOIL.h>
+// GLM Mathematics
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 // Other includes
 #include "Shader.h"
+#include "identity_matrix.h"
 
 
 // Function prototypes
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
 
 
-
 // The MAIN function, from here we start the application and run the game loop
-int texture_source_main()
+int gl_trans_form_source_main()
 {
-    // Window dimensions
-    const GLuint WIDTH = 800, HEIGHT = 600;
 
+// Window dimensions
+    const GLuint WIDTH = 800, HEIGHT = 600;
     // Init GLFW
     glfwInit();
     // Set all the required options for GLFW
@@ -33,6 +37,7 @@ int texture_source_main()
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+
     // Create a GLFWwindow object that we can use for GLFW's functions
     GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "LearnOpenGL", nullptr, nullptr);
     glfwMakeContextCurrent(window);
@@ -46,12 +51,12 @@ int texture_source_main()
     glewInit();
 
     // Define the viewport dimensions
-   // glViewport(0, 0, WIDTH, HEIGHT);
+    //glViewport(0, 0, WIDTH, HEIGHT);
 
 
     // Build and compile our shader program
-    Shader ourShader("/Users/emery/AppcodeProjects/OpenGL_Xcode/BaseOpenGL/texture/vertexShaderX.vs",
-            "/Users/emery/AppcodeProjects/OpenGL_Xcode/BaseOpenGL/texture/fragmentShaderX.frag");
+    Shader ourShader("/Users/emery/AppcodeProjects/OpenGL_Xcode/BaseOpenGL/transform/transform.vs",
+            "/Users/emery/AppcodeProjects/OpenGL_Xcode/BaseOpenGL/transform/transform.frag");
 
 
     // Set up vertex data (and buffer(s)) and attribute pointers
@@ -92,7 +97,7 @@ int texture_source_main()
     glBindVertexArray(0); // Unbind VAO
 
 
-    // Load and create a texture 
+    // Load and create a texture
     GLuint texture1;
     GLuint texture2;
     // ====================
@@ -108,7 +113,7 @@ int texture_source_main()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     // Load, create texture and generate mipmaps
     int width, height;
-    unsigned char* image = SOIL_load_image("/Users/emery/AppcodeProjects/OpenGL_Xcode/BaseOpenGL/res/image/iphone-we-front.png", &width, &height, 0, SOIL_LOAD_RGB);
+    unsigned char* image = SOIL_load_image("/Users/emery/AppcodeProjects/OpenGL_Xcode/BaseOpenGL/res/image/timg.jpeg", &width, &height, 0, SOIL_LOAD_RGB);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
     glGenerateMipmap(GL_TEXTURE_2D);
     SOIL_free_image_data(image);
@@ -125,7 +130,7 @@ int texture_source_main()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     // Load, create texture and generate mipmaps
-    image = SOIL_load_image("/Users/emery/AppcodeProjects/OpenGL_Xcode/BaseOpenGL/res/image/greece-flag-icon.png", &width, &height, 0, SOIL_LOAD_RGB);
+    image = SOIL_load_image("/Users/emery/AppcodeProjects/OpenGL_Xcode/BaseOpenGL/res/image/awesomeface.png", &width, &height, 0, SOIL_LOAD_RGB);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
     glGenerateMipmap(GL_TEXTURE_2D);
     SOIL_free_image_data(image);
@@ -150,9 +155,21 @@ int texture_source_main()
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, texture1);
         glUniform1i(glGetUniformLocation(ourShader.Program, "ourTexture1"), 0);
+
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, texture2);
         glUniform1i(glGetUniformLocation(ourShader.Program, "ourTexture2"), 1);
+
+        // Create transformations
+        glm::mat4x4 transform=identity;
+
+        transform = glm::translate(transform, glm::vec3(0.5f,-0.5f,0.0f));
+        transform = glm::rotate(transform, (GLfloat)glfwGetTime() * 50.0f, glm::vec3(0.0f, 0.0f, 1.0f));
+
+
+        // Get matrix's uniform location and set matrix
+        GLint transformLoc = glGetUniformLocation(ourShader.Program, "transform");
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
 
         // Draw container
         glBindVertexArray(VAO);
@@ -171,8 +188,7 @@ int texture_source_main()
     return 0;
 }
 
-// Is called whenever a key is pressed/released via GLFW
-/*
+/*// Is called whenever a key is pressed/released via GLFW
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
