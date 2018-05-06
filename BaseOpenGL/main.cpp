@@ -9,6 +9,9 @@
 #include "texture_source_alpha.h"
 #include "gl_matrix_transform.h"
 #include "gl_transform_source.h"
+#include "coordinate.h"
+#include "coordinate_source.h"
+#include "coordinate_source_3d.h"
 int main(int argc, const char * argv[]) {
     
    // hello_triangle_main();
@@ -25,8 +28,10 @@ int main(int argc, const char * argv[]) {
 
    //maxtrix_transform_test();
   // gl_matrix_transform_main();
-   gl_trans_form_source_main();
+  // gl_trans_form_source_main();
 
+    //coordinate_main();
+    coordinate_source_3d_main();
     return 0;
     
 }
