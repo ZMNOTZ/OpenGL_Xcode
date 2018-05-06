@@ -163,8 +163,8 @@ int gl_trans_form_source_main()
         // Create transformations
         glm::mat4x4 transform=identity;
 
-        transform = glm::translate(transform, glm::vec3(0.5f,-0.5f,0.0f));
-        transform = glm::rotate(transform, (GLfloat)glfwGetTime() * 50.0f, glm::vec3(0.0f, 0.0f, 1.0f));
+        transform = glm::translate(transform, glm::vec3(-0.5f,0.5f,0.0f));
+        transform = glm::rotate(transform, (GLfloat)glfwGetTime() * 90.0f, glm::vec3(0.0f, 0.0f, 1.0f));
 
 
         // Get matrix's uniform location and set matrix

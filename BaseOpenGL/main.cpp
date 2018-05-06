@@ -5,7 +5,7 @@
 //
 
 #include <iostream>
-
+#define GLM_FORCE_CTOR_INIT
 #include "texture_source_alpha.h"
 #include "gl_matrix_transform.h"
 #include "gl_transform_source.h"

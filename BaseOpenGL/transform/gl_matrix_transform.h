@@ -12,7 +12,7 @@
 #include <glm/vec4.hpp>
 #include <glm/mat4x4.hpp>
 #include <glm/trigonometric.hpp>
-#define GLM_FORCE_CXX14
+
 #include <glm/glm.hpp>
 // Include GLM extensions
 #include <glm/gtc/matrix_transform.hpp>
@@ -41,7 +41,15 @@ int maxtrix_transform_test(){
     }
     std::cout << vec.x << vec.y << vec.z << std::endl;
 
-
+    glm::mat4 mat4;
+    std::cout<<"mat4"<<std::endl;
+    for (int i = 0; i < mat4.length(); ++i) {
+        for (int j = 0; j <mat4.length(); ++j) {
+            //std::cout<<"mat4["<<i<<"]"<<"["<<j<<"]="<< mat4[i][j]<<std::endl;
+                    std::cout<<mat4[i][j]<<",";
+        }
+        std::cout<<std::endl;
+    }
     return 0;
 }
 
