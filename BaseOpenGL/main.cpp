@@ -14,7 +14,10 @@
 #include "coordinate_source_3d.h"
 #include "camera_source.h"*/
 //#include "camera_source_cursor.h"
-#include "gl_camera.h"
+//#include "gl_camera.h"
+//#include "lighting_color_word_space.h"
+//#include "lighting_color_view_space.h"
+#include "lighting_color_gouraud.h"
 int main(int argc, const char * argv[]) {
     
    // hello_triangle_main();
@@ -37,7 +40,10 @@ int main(int argc, const char * argv[]) {
     //coordinate_source_3d_main();
    // camera_source_main();
    //camera_source_cursor_main();
-    gl_camera_main();
+    //gl_camera_main();
+    //lighting_color_word_space_main();
+    //lighting_color_view_space_main();
+    lighting_color_gouraud_main();
     return 0;
     
 }
