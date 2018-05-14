@@ -40,18 +40,25 @@
 		5C25B1408ED12FF4623E5786 /* lighting_color_gouraud.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_color_gouraud.vs; sourceTree = "<group>"; };
 		5C25B1ADFB8A6C2E38EE7A3D /* lighting_color_gouraud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lighting_color_gouraud.h; sourceTree = "<group>"; };
 		5C25B1D343F739860A85363C /* lighting_lamp.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_lamp.frag; sourceTree = "<group>"; };
+		5C25B1FFFBF70C9CBAF3A649 /* material_list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = material_list.txt; sourceTree = "<group>"; };
 		5C25B2270BD2AE061D158F8F /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
 		5C25B255DBCC8D254284F9F8 /* transform.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = transform.vs; sourceTree = "<group>"; };
 		5C25B356492411FFE45C0B44 /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
+		5C25B38F8834B5C471EA4F85 /* lighting_basic_lamp.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_basic_lamp.vs; sourceTree = "<group>"; };
 		5C25B4081F3F7348423D6836 /* stbi_DDS_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_c.h; sourceTree = "<group>"; };
 		5C25B40B7A9D0F50F2640A7D /* texture_source_alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture_source_alpha.h; sourceTree = "<group>"; };
+		5C25B457EDE938EA24F56156 /* lighting_basic_lamp.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_basic_lamp.frag; sourceTree = "<group>"; };
 		5C25B4874E63475705EEF97F /* jo_jpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jo_jpeg.h; sourceTree = "<group>"; };
 		5C25B502EF7B3EA9A9D64647 /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
+		5C25B55F967827B23134F762 /* lighting_basic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lighting_basic.h; sourceTree = "<group>"; };
 		5C25B57B775B0DA6CB3474D7 /* stbi_pvr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pvr.h; sourceTree = "<group>"; };
 		5C25B5C2414704183471B334 /* lighting_color_view_space.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lighting_color_view_space.h; sourceTree = "<group>"; };
 		5C25B5C335858FC94E8A3F97 /* SOIL2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL2.h; sourceTree = "<group>"; };
+		5C25B5FDD817B6F0C834A1F2 /* lighting_basic.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_basic.vs; sourceTree = "<group>"; };
 		5C25B605C40C63AF0EF38223 /* fragmentShaderZoom.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragmentShaderZoom.frag; sourceTree = "<group>"; };
 		5C25B6132AB70F80FA30CF95 /* coordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coordinate.h; sourceTree = "<group>"; };
+		5C25B62A687E8E203FC5AE1F /* lighting_basic.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_basic.frag; sourceTree = "<group>"; };
+		5C25B63A2054F34D66CCDC13 /* lighting_basic_camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lighting_basic_camera.h; sourceTree = "<group>"; };
 		5C25B66366721CE4470BC04E /* lighting_color_view_space.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_color_view_space.frag; sourceTree = "<group>"; };
 		5C25B6F3AED90677ADE9551C /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
 		5C25B71657FE0ED6729A2768 /* fragmentShaderX.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragmentShaderX.frag; sourceTree = "<group>"; };
@@ -62,12 +69,14 @@
 		5C25B8377B071D497EE66ACE /* coordinate.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = coordinate.frag; sourceTree = "<group>"; };
 		5C25B86ACB284EA5918022CC /* camera_source_cursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera_source_cursor.h; sourceTree = "<group>"; };
 		5C25B86F6EE41B24A8C34B04 /* transform.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = transform.frag; sourceTree = "<group>"; };
+		5C25B880A7A9986FF6629046 /* lighting_texture_diffuse.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_texture_diffuse.vs; sourceTree = "<group>"; };
 		5C25B8A488B68916D5384223 /* coordinate.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = coordinate.vs; sourceTree = "<group>"; };
 		5C25B914AF4A620D73C3E776 /* texture_source_change.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture_source_change.h; sourceTree = "<group>"; };
 		5C25B9675B25A200CD615BA8 /* gl_camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl_camera.h; sourceTree = "<group>"; };
 		5C25B9D966661ED109DAD40B /* stbi_pkm_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pkm_c.h; sourceTree = "<group>"; };
 		5C25BA258553F08826431EE5 /* stbi_pvr_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pvr_c.h; sourceTree = "<group>"; };
 		5C25BA55678D6A2E59E6746B /* vertexShaderX.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertexShaderX.vs; sourceTree = "<group>"; };
+		5C25BA7BFD34323FABC66326 /* lighting_texture_diffuse.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_texture_diffuse.frag; sourceTree = "<group>"; };
 		5C25BA8DF08D39C3704D1FD7 /* camera_source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera_source.h; sourceTree = "<group>"; };
 		5C25BABBF15317AA33308122 /* lighting_lamp.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_lamp.vs; sourceTree = "<group>"; };
 		5C25BABD425E18499BFFFA51 /* pvr_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pvr_helper.h; sourceTree = "<group>"; };
@@ -83,6 +92,7 @@
 		5C25BD3A5CC58BB1164616D9 /* coordinate_source.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = coordinate_source.frag; sourceTree = "<group>"; };
 		5C25BD5CA633BC1E44FEEB46 /* stbi_pkm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pkm.h; sourceTree = "<group>"; };
 		5C25BD5D0AF6984096E9B91F /* lighting_color_gouraud.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_color_gouraud.frag; sourceTree = "<group>"; };
+		5C25BD8595E4FB61AB262B96 /* lighting_texture_diffuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lighting_texture_diffuse.h; sourceTree = "<group>"; };
 		5C25BDA97D03D9473D3369B9 /* lighting_color.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_color.vs; sourceTree = "<group>"; };
 		5C25BDFF62A9EF65B2F9F6CF /* etc1_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = etc1_utils.h; sourceTree = "<group>"; };
 		5C25BE1E8226305067CD3858 /* camera_source.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = camera_source.frag; sourceTree = "<group>"; };
@@ -130,8 +140,20 @@
 				5C25B1408ED12FF4623E5786 /* lighting_color_gouraud.vs */,
 				5C25BD5D0AF6984096E9B91F /* lighting_color_gouraud.frag */,
 				5C25B1ADFB8A6C2E38EE7A3D /* lighting_color_gouraud.h */,
+				5C25B1EA42CB75E8A30C2C6F /* texture */,
+				5C25B4E9B6FFA0A7A34CC35B /* exercise */,
 			);
 			path = lighting;
+			sourceTree = "<group>";
+		};
+		5C25B1EA42CB75E8A30C2C6F /* texture */ = {
+			isa = PBXGroup;
+			children = (
+				5C25B880A7A9986FF6629046 /* lighting_texture_diffuse.vs */,
+				5C25BA7BFD34323FABC66326 /* lighting_texture_diffuse.frag */,
+				5C25BD8595E4FB61AB262B96 /* lighting_texture_diffuse.h */,
+			);
+			path = texture;
 			sourceTree = "<group>";
 		};
 		5C25B36F5F942B82CC550C35 /* coordinate */ = {
@@ -146,6 +168,19 @@
 				5C25BB8DC5ED543CD4FD4797 /* coordinate_source_3d.h */,
 			);
 			path = coordinate;
+			sourceTree = "<group>";
+		};
+		5C25B4E9B6FFA0A7A34CC35B /* exercise */ = {
+			isa = PBXGroup;
+			children = (
+				5C25B55F967827B23134F762 /* lighting_basic.h */,
+				5C25B5FDD817B6F0C834A1F2 /* lighting_basic.vs */,
+				5C25B62A687E8E203FC5AE1F /* lighting_basic.frag */,
+				5C25B38F8834B5C471EA4F85 /* lighting_basic_lamp.vs */,
+				5C25B457EDE938EA24F56156 /* lighting_basic_lamp.frag */,
+				5C25B63A2054F34D66CCDC13 /* lighting_basic_camera.h */,
+			);
+			path = exercise;
 			sourceTree = "<group>";
 		};
 		5C25B84447A21D7BDEE1DBFA /* transform */ = {
@@ -165,6 +200,7 @@
 				5C25BF1AA0AF2CE38B8220CD /* shader.h */,
 				5C25BFF564E002F30A6AF04F /* identity_matrix.h */,
 				5C25B7A01438B8A9ECA94929 /* camera.h */,
+				5C25B1FFFBF70C9CBAF3A649 /* material_list.txt */,
 			);
 			path = common;
 			sourceTree = "<group>";

@@ -17,7 +17,9 @@
 //#include "gl_camera.h"
 //#include "lighting_color_word_space.h"
 //#include "lighting_color_view_space.h"
-#include "lighting_color_gouraud.h"
+//#include "lighting_color_gouraud.h"
+//#include "lighting_basic.h"
+#include "lighting_texture_diffuse.h"
 int main(int argc, const char * argv[]) {
     
    // hello_triangle_main();
@@ -43,7 +45,10 @@ int main(int argc, const char * argv[]) {
     //gl_camera_main();
     //lighting_color_word_space_main();
     //lighting_color_view_space_main();
-    lighting_color_gouraud_main();
+    //lighting_color_gouraud_main();
+    //lighting_basic_main();
+    lighting_texture_diffuse_main();
+
     return 0;
     
 }

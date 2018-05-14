@@ -45,7 +45,14 @@ public:
     GLfloat Zoom;
 
     // Constructor with vectors
-    Camera(glm::vec3 position = glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f), GLfloat yaw = YAW, GLfloat pitch = PITCH) : Front(glm::vec3(0.0f, 0.0f, -1.0f)), MovementSpeed(SPEED), MouseSensitivity(SENSITIVTY), Zoom(ZOOM)
+    Camera(glm::vec3 position = glm::vec3(0.0f, 0.0f, 0.0f),
+            glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f),
+                    GLfloat yaw = YAW,
+                            GLfloat pitch = PITCH) :
+                                    Front(glm::vec3(0.0f, 0.0f, -1.0f)),
+                                    MovementSpeed(SPEED),
+                                    MouseSensitivity(SENSITIVTY),
+                                    Zoom(ZOOM)
     {
         this->Position = position;
         this->WorldUp = up;
@@ -54,7 +61,17 @@ public:
         this->updateCameraVectors();
     }
     // Constructor with scalar values
-    Camera(GLfloat posX, GLfloat posY, GLfloat posZ, GLfloat upX, GLfloat upY, GLfloat upZ, GLfloat yaw, GLfloat pitch) : Front(glm::vec3(0.0f, 0.0f, -1.0f)), MovementSpeed(SPEED), MouseSensitivity(SENSITIVTY), Zoom(ZOOM)
+    Camera(GLfloat posX,
+            GLfloat posY,
+            GLfloat posZ,
+            GLfloat upX,
+            GLfloat upY,
+            GLfloat upZ,
+            GLfloat yaw,
+            GLfloat pitch) : Front(glm::vec3(0.0f, 0.0f, -1.0f)),
+                             MovementSpeed(SPEED),
+                             MouseSensitivity(SENSITIVTY),
+                             Zoom(ZOOM)
     {
         this->Position = glm::vec3(posX, posY, posZ);
         this->WorldUp = glm::vec3(upX, upY, upZ);
@@ -64,8 +81,8 @@ public:
     }
 
     // Returns the view matrix calculated using Eular Angles and the LookAt Matrix
-    glm::mat4 GetViewMatrix()
-    {
+    glm::mat4 GetViewMatrix() {
+       // lookAt(position,target,up)
         return glm::lookAt(this->Position, this->Position + this->Front, this->Up);
     }
 
@@ -120,7 +137,7 @@ private:
     // Calculates the front vector from the Camera's (updated) Eular Angles
     void updateCameraVectors()
     {
-        // Calculate the new Front vector
+        // Calculate the new Front vector //front 和 camera direction 方向相反
         glm::vec3 front;
         front.x = cos(glm::radians(this->Yaw)) * cos(glm::radians(this->Pitch));
         front.y = sin(glm::radians(this->Pitch));
