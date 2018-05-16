@@ -23,7 +23,9 @@
 //#include "lighting_texture_emission.h"
 //#include "lighting_caster_directional.h"
 //#include "lighting_caster_attenuation.h"
-#include "lighting_caster_flashlight.h"
+//#include "lighting_caster_flashlight.h"
+#include "lighting_multiple_light.h"
+
 int main(int argc, const char * argv[]) {
     
    // hello_triangle_main();
@@ -54,7 +56,8 @@ int main(int argc, const char * argv[]) {
     //lighting_texture_diffuse_main();
     //lighting_texture_emission_main();
     //lighting_caster_main();
-    lighting_caster_flashlight_main();
+   // lighting_caster_flashlight_main();
+    lighting_multiple_light_main();
     return 0;
     
 }

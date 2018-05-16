@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C25B2EE672C8AAB6205BFCC /* SOIL2.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C25B125CBBF220EFF9A90AD /* SOIL2.c */; };
 		5C25B5A2422F976EB6F869F5 /* etc1_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C25BEDB73DA10AD71D4298A /* etc1_utils.c */; };
+		5C25B6F88439AC941D5522CE /* libassimp.3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C25B9B81E22C1B6176B4D1F /* libassimp.3.3.1.dylib */; };
 		5C25BB13CADE3A9BA7240D3A /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C25B2270BD2AE061D158F8F /* image_helper.c */; };
 		5C25BC5DBEDE43D0082134AC /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C25BAF6BBC34D01B2E6CBE3 /* image_DXT.c */; };
 		9C49264B2098135B0071A076 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C4926492098135B0071A076 /* glad.c */; };
@@ -66,6 +67,7 @@
 		5C25B63668121E486BD0F93F /* lighting_texture_emission.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_texture_emission.vs; sourceTree = "<group>"; };
 		5C25B63A2054F34D66CCDC13 /* lighting_basic_camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lighting_basic_camera.h; sourceTree = "<group>"; };
 		5C25B66366721CE4470BC04E /* lighting_color_view_space.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting_color_view_space.frag; sourceTree = "<group>"; };
+		5C25B673DC2FB9581F7DABFC /* lighting_multiple_light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lighting_multiple_light.h; sourceTree = "<group>"; };
 		5C25B6F3AED90677ADE9551C /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
 		5C25B71657FE0ED6729A2768 /* fragmentShaderX.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragmentShaderX.frag; sourceTree = "<group>"; };
 		5C25B71C96FB820F3C3C1B9B /* coordinate_source.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = coordinate_source.vs; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		5C25B914AF4A620D73C3E776 /* texture_source_change.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture_source_change.h; sourceTree = "<group>"; };
 		5C25B9675B25A200CD615BA8 /* gl_camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl_camera.h; sourceTree = "<group>"; };
 		5C25B977B5BF0F20AA94B26D /* lighting_texture_emission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lighting_texture_emission.h; sourceTree = "<group>"; };
+		5C25B9B81E22C1B6176B4D1F /* libassimp.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.3.1.dylib; path = /usr/local/lib/libassimp.3.3.1.dylib; sourceTree = "<absolute>"; };
 		5C25B9D966661ED109DAD40B /* stbi_pkm_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pkm_c.h; sourceTree = "<group>"; };
 		5C25BA258553F08826431EE5 /* stbi_pvr_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pvr_c.h; sourceTree = "<group>"; };
 		5C25BA55678D6A2E59E6746B /* vertexShaderX.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertexShaderX.vs; sourceTree = "<group>"; };
@@ -135,6 +138,7 @@
 				9CA09C422096B6DB0070600D /* libglfw.3.3.dylib in Frameworks */,
 				9CA09C402096B6740070600D /* libGLEW.2.1.0.dylib in Frameworks */,
 				9CA09C3E2096B59F0070600D /* OpenGL.framework in Frameworks */,
+				5C25B6F88439AC941D5522CE /* libassimp.3.3.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +150,7 @@
 			children = (
 				5C25B03AAD398ACF39721A83 /* lighting_multiple_light.vs */,
 				5C25B733B51DDABB1FF911BA /* lighting_multiple_light.frag */,
+				5C25B673DC2FB9581F7DABFC /* lighting_multiple_light.h */,
 			);
 			path = multiple;
 			sourceTree = "<group>";
@@ -308,6 +313,13 @@
 			path = camera;
 			sourceTree = "<group>";
 		};
+		5C25BEB0E4F756F28BD3BBEF /* mesh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mesh;
+			sourceTree = "<group>";
+		};
 		9CA09C292096B56F0070600D = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +351,7 @@
 				5C25B36F5F942B82CC550C35 /* coordinate */,
 				5C25BDC6A41701895C15B9C6 /* camera */,
 				5C25B1DA0E070C9ABF7451EC /* lighting */,
+				5C25BEB0E4F756F28BD3BBEF /* mesh */,
 			);
 			path = BaseOpenGL;
 			sourceTree = "<group>";
@@ -349,6 +362,7 @@
 				9CA09C412096B6DB0070600D /* libglfw.3.3.dylib */,
 				9CA09C3F2096B6740070600D /* libGLEW.2.1.0.dylib */,
 				9CA09C3D2096B59F0070600D /* OpenGL.framework */,
+				5C25B9B81E22C1B6176B4D1F /* libassimp.3.3.1.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -544,6 +558,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"${PROJECT_DIR}/../../../../../usr/local/lib\"/**";
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				INCLUDED_SOURCE_FILE_NAMES = (
 				);
@@ -557,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"${PROJECT_DIR}/../../../../../usr/local/lib\"/**";
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				INCLUDED_SOURCE_FILE_NAMES = (
 				);
